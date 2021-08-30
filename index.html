@@ -13,10 +13,10 @@
     />
     <title>Document</title>
   </head>
-  <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <header id="header">
+    <nav id="nav-bar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="https://raw.githubusercontent.com/sanishchirayath1/landingPage/main/cube.png" alt="" width="30" height="24">
+            <img id="header-img" src="https://raw.githubusercontent.com/sanishchirayath1/landingPage/main/cube.png" alt="" width="30" height="24">
 
         <a class="navbar-brand" href="#">Cube</a>
         <button
@@ -33,15 +33,15 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
+                <a class="nav-link" href="#wrapper"
+                >features <span class="sr-only">(current)</span></a
                 >
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#video">Video</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             </ul>
         </div>
@@ -50,12 +50,14 @@
   <body>
       <div class="container">
         <div class="form">
-            <h1>Handcrafted,home-made masterpieces</h1>
+            <h1 id="title">Handcrafted,home-made masterpieces</h1>
+          <form id="form" action="">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input id="email" name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
               </div><br>
-            <button type="submit" class="btn btn-primary">GET STARTED</button>
+            <input id="submit" onclick="location.href='https://www.freecodecamp.com/email-submit';" type="submit" class="btn btn-primary button_active"></input>
+            </form>
         </div>
         <hr>
         <div>
@@ -68,7 +70,7 @@
                 <div class="col-8" id="wrapper"><h3 >
                     Premium Materials
                 </h3>
-            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p></div>
+            <p id="description">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p></div>
             </div>
             <div class="shipping row mb-3">
                 <div class="col-4">
@@ -78,24 +80,24 @@
                 <div class="col-8" id="wrapper"><h3>
                     Fast Shipping
                 </h3>
-            <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p></div>
+            <p id="description">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p></div>
             </div>
             <div class="Quality row mb-3">
                 <div class="col-4">
                     <br>
                     <br>
-                    <img src="/hr24.png" alt="Quality icon"></div>
+                    <img src="https://raw.githubusercontent.com/sanishchirayath1/landingPage/main/hr24.png" alt="Quality icon"></div>
                 <div class="col-8" id="wrapper"><h3>
                     Quality Assurance
                 </h3>
-            <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p></div>
+            <p id="description">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p></div>
         </div>
         <hr>
         <div class="video col-12">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UUDKEbX5OQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/UUDKEbX5OQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <hr>
-        <div class="pricing row">
+        <div id="pricing" class="pricing row">
             <div class="small col-3">
                 <h3>Small</h3>
                 <h1>600$</h1> 
